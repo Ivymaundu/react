@@ -1,0 +1,117 @@
+.container-fluid {
+  background-color: aquamarine;
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+ 
+  
+}
+
+.form-layout {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+.to-do-header {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.to-do-list {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 42%;
+}
+
+.add-button {
+  display: flex;
+  margin-top: 3%;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.15em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.add-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+#special-input {
+  border: 2px solid black;
+  border-radius: 4px;
+  
+}
+
+
+.delete-activity {
+  align-items: center;
+  background-color: black;
+  background-position: 0 0;
+  border: 1px solid aquamarine;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  margin-left: 4%;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  /* list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none; */
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.delete-activity:active,
+.delete-activity:hover,
+.delete-activity:focus {
+  outline: 0;
+}
+
+
+.delete-activity:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.delete-activity:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.delete-activity:active:hover,
+.delete-activity:focus:hover,
+.delete-activity:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+
