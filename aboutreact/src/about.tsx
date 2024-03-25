@@ -2,12 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './about.css'
 export default function About() {
 
-    const imageData = [
-        { src: "/images/person-a.jpg", name: "Samira Hadid", position: "Founder" },
-        { src: "/images/person-b.jpg", name: "Saira Kohli", position: "Managing patner" },
-        { src: "/images/person-c.jpg", name: "Rosemary James", position: "Senior partner" },
-        { src: "/images/person-d.jpg", name: "Itsuki Takahashi", position: "Managing patner" }
-    ];
+    // const imageData = [
+    //     { src: "/images/person-a.jpg", name: "Samira Hadid", position: "Founder" },
+    //     { src: "/images/person-b.jpg", name: "Saira Kohli", position: "Managing patner" },
+    //     { src: "/images/person-c.jpg", name: "Rosemary James", position: "Senior partner" },
+    //     { src: "/images/person-d.jpg", name: "Itsuki Takahashi", position: "Managing patner" }
+    // ];
 
 
     return (
