@@ -1,0 +1,116 @@
+.full-width-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+}
+.part-a{
+    position: relative;
+    height: 600px;
+    margin-top: 3%;
+}
+.part-a img {
+    width: 100%;
+    height: 90vh;
+    float: left;
+    background-color: aliceblue;
+    position: relative;
+    margin-right: 16%;
+}
+.part-a h2{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 25%;
+    
+}
+.part-a p{
+    position: relative;
+    margin-left: 22%;
+    /* margin-top: 25%; */
+}
+
+.part-a a{
+    text-decoration: none;
+    color: rgb(44, 129, 36);
+    position: relative;
+    margin-left: 22%;
+}
+/* .part-b{
+    margin-top: 10%;
+} */
+.image-item{
+    position: relative;
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .part-c{
+    position: relative;
+    margin-top: 4%;
+    background-color: black;
+    color: rgb(235, 234, 234);
+
+}
+.part-c h1{
+    position: relative;
+    margin-top: 20%;
+    margin-left: 15%;
+    
+}
+.part-c img{
+    position: relative;
+    height: 300px;
+    width: 615px;
+}
+.part-d{
+    position: relative;
+    margin-top: 4%;
+
+}
+.part-d img{
+    position: relative;
+    height: 250px;
+    width: 500px;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.part-d h1{
+    position: relative;
+    margin-top: 4%;
+}
+.part-d h5{
+    position: relative;
+    margin-top: 10%;
+}
+.part-d ul{
+    position: relative;
+    margin-top: 5%;
+}
+.part-e{
+    position: relative;
+    margin-top: 7%;
+}
+.part-e h5{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.part-e h1{
+    position: relative;
+    margin-left: 10%;
+}
+.part-f{
+    position: relative;
+    background-color: rgb(10, 10, 10);
+    color: rgb(235, 234, 234);
+    margin-top: 5%;
+}
+.part-f img{
+    position: relative;
+    height: 500px;
+    width: 600px;
+}
+

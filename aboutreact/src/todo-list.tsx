@@ -27,7 +27,7 @@ export default function TodoList() {
     setTodos(todos.filter(todo => todo.id !== id));
 
   }
-  console.log(todos)
+  
   return (
     <div className='container-fluid'>
       <form className="form-layout" onSubmit={handleSubmit}>
