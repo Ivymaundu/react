@@ -9,6 +9,12 @@ function Login(){
         username:string;
         password: string
     }
+    type ResponseData={
+        access_token:string,
+        message:string,
+        user_id:string
+
+    }
 
     const dispatch = useDispatch();
 
@@ -17,12 +23,7 @@ function Login(){
         password:""
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setForm({
-            ...form,
-            [e.target.name]: e.target.value
-        });
-    }
+   
 
     const handleSubmit =async(e:any) =>{
         e.preventDefault();
@@ -31,6 +32,7 @@ function Login(){
             username :form.username,
             password:form.password
         };
+
 
 
         try {
@@ -43,6 +45,12 @@ function Login(){
                 });
             
             console.log('response', response.data)
+
+            const responseData: ResponseData={
+                ...response.data
+            }
+            console.log("responseData.......",responseData)
+            localStorage.setItem("token ",responseData.access_token)
         } catch (error) {
             console.log('error...',error)
         }
@@ -50,12 +58,18 @@ function Login(){
         // dispatch(setAuthentication(outCome));
 
     }
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value
+        });
+    }
 
 
     return(
         <div>
             <form className="text-black" onSubmit={(e)=>handleSubmit(e)}>
-                <input type="name" className="font-bold border border-black rounded-lg m-4 p-4" name="username" placeholder="name"
+                <input type="text" className="font-bold border border-black rounded-lg m-4 p-4" name="username" placeholder="name"
                 value={form.username}
                 onChange={handleChange} required/>
                 <input type="password" className="font-bold border border-black rounded-lg m-4 p-4"name="password" placeholder="password"
