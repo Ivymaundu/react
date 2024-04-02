@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './about.css'
+import { useNavigate } from 'react-router-dom';
 export default function About() {
 
     // const imageData = [
@@ -8,10 +9,18 @@ export default function About() {
     //     { src: "/images/person-c.jpg", name: "Rosemary James", position: "Senior partner" },
     //     { src: "/images/person-d.jpg", name: "Itsuki Takahashi", position: "Managing patner" }
     // ];
+    let navigate = useNavigate();
+    const handleClick = ()=>(
+        
+        navigate("/")
+    )
 
 
     return (
         <div className="full-width-container">
+            <p>Back to home?
+            <button onClick={handleClick}>Go to home</button>
+            </p>
             <div className="part-a">
                 <div className="row">
                 <div className="col-6">
