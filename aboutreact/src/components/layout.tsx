@@ -18,7 +18,7 @@ function Layout(){
                         <Link to="/contact-us">contactUs</Link>
                     </li>
                     <li>
-                        <Link to="/logout">login</Link>
+                        <Link to="/login">login</Link>
                     </li>
                 </ul>
                 </nav>

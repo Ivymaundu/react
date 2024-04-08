@@ -6,7 +6,8 @@ import HomeComponent from './index.tsx'
 import { Routes, Route } from 'react-router-dom'
 import Layout from '../components/layout.tsx';
 import Login from './login.tsx'
-import Logout from './logout.tsx'
+import ProtectedRoute from './protectedroute.tsx';
+import Products from './products.tsx'
 // import React from 'react'
 
 
@@ -18,8 +19,11 @@ function App() {
         <Route path="/" element={< HomeComponent />} />
         <Route path="/about" element={<  About />}/>
         <Route path="/contact-us" element={< ContactUs />} />
+        
       </Route>
       <Route path="/login" element={<  Login />} />
+      <ProtectedRoute path="/products" element={<Products/>} />
+      
     </Routes>
     )
 }
