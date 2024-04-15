@@ -3,10 +3,10 @@ import { Route, useNavigate} from 'react-router-dom';
 
 
 interface ProtectedRouteProps {
-    element: any;
+    element: React.ElementType;
     path: string;
   }
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({  element:Element ,...rest ,path,}) => {
+const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ element:Element ,path, ...rest }) => {
     const navigate=useNavigate()
 
     const token = localStorage.getItem('token');

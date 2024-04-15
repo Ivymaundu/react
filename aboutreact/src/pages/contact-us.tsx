@@ -37,7 +37,7 @@ export default function ContactUs() {
                     <div className="col-6">
                         <h6>CONTACT</h6>
                         <h2>FORM</h2>
-                        <form >
+                        <form style={{backgroundColor:'white'}}>
 
                             <input type="text" id="name" name="name" placeholder="Your name.." required style={{ border: '2px solid black' }} />
                             <br></br>

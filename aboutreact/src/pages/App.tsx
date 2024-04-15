@@ -8,6 +8,7 @@ import Layout from '../components/layout.tsx';
 import Login from './login.tsx'
 import ProtectedRoute from './protectedroute.tsx';
 import Products from './products.tsx'
+import GetProducts from './getproducts.tsx'
 // import React from 'react'
 
 
@@ -22,7 +23,7 @@ function App() {
         
       </Route>
       <Route path="/login" element={<  Login />} />
-      <ProtectedRoute path="/products" element={<Products/>} />
+      <Route path="/products" element={<GetProducts/>} />
       
     </Routes>
     )

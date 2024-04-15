@@ -3,10 +3,12 @@ import { useState } from 'react';
 // import { setAuthentication } from '../store/authentications';
 import axios from 'axios';
 import '../login.css';
-import { useNavigate } from 'react-router-dom';
-import { useAuthContext } from '../store/authprovider';
+import { useNavigate }  from "react-router-dom";
+
+
 
 function Login(){
+    const navigate=useNavigate()
 
     type AuthType = {
         username:string;
@@ -19,14 +21,7 @@ function Login(){
 
     }
 
-    const navigate = useNavigate();
-    const { login } = useAuthContext();
    
-    const handleLogin = () => {
-        login().then(() => {
-          navigate('/dashboard');
-        });
-      };
    
 
     const [form, setForm] = useState({
@@ -63,11 +58,13 @@ function Login(){
             const responseData: ResponseData={
                 ...response.data
             }
-            setIsLoggedIn(true);
+            // setIsLoggedIn(true);
             console.log("responseData.......",responseData)
 
             localStorage.setItem("token ",responseData.access_token)
             localStorage.setItem("isLoggedIn", "true");
+            setIsLoggedIn(true);
+            navigate("/products")
 
         } catch (error) {
             console.log('error...',error)
@@ -95,7 +92,7 @@ function Login(){
                 value={form.password}
                 onChange={handleChange} style={{'border':'2px solid black','padding':'10px','marginTop':'8%','marginLeft':'32%'}}/><br></br>
                 
-                <button type="submit" className="login-button" onClick={handleLogin}>Submit</button>
+                <button type="submit" className="login-button">Submit</button>
             </form>
         </div>
     )
